@@ -11,4 +11,8 @@ uci commit luci
 # uci set fstab.@global[0].check_fs=1
 # uci commit fstab
 
+uci set network.lan.ipaddr='10.18.8.1'
+uci set network.lan.netmask='255.255.0.0'
+uci commit network
+
 exit 0
